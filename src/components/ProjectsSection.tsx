@@ -26,7 +26,7 @@ const projects: Project[] = [
     links: {
       github: 'https://github.com/TristanBrian/brian-folio',
     },
-    icon: <Code />,s
+    icon: <Code />,
   },
   {
     id: 2,
