@@ -48,25 +48,44 @@ const ContactSection = () => {
       }));
     }
   };
-  const handleSubmit = (e: React.FormEvent) => {
+const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (validate()) {
-      setIsSubmitting(true);
+        setIsSubmitting(true);
 
-      // Simulate form submission
-      setTimeout(() => {
-        setIsSubmitting(false);
-        setFormData({
-          name: '',
-          email: '',
-          message: ''
-        });
-        toast({
-          title: "Message Sent",
-          description: "Thank you for your message! I'll get back to you soon.",
-          variant: "default"
-        });
-      }, 1500);
+        try {
+            const response = await fetch('/api/sendEmail', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData),
+            });
+
+            if (response.ok) {
+                setFormData({
+                    name: '',
+                    email: '',
+                    message: ''
+                });
+                toast({
+                    title: "Message Sent",
+                    description: "Thank you for your message! I'll get back to you soon.",
+                    variant: "default"
+                });
+            } else {
+                throw new Error('Failed to send message');
+            }
+        } catch (error) {
+            toast({
+                title: "Error",
+                description: error.message,
+                variant: "destructive"
+            });
+        } finally {
+            setIsSubmitting(false);
+        }
+
     } else {
       toast({
         title: "Validation Error",
@@ -154,7 +173,7 @@ const ContactSection = () => {
                   </div>
                   <div className="ml-4">
                     <h4 className="text-white font-medium">Email</h4>
-                    <a href="mailto:contact@example.com" className="text-gray-400 hover:text-cyber-blue transition-colors duration-300">lessusbrian7@gmail.com</a>
+                    <a href="mailto:lessusbrian7@gmail.com" className="text-gray-400 hover:text-cyber-blue transition-colors duration-300">lessusbrian7@gmail.com</a>
                   </div>
                 </div>
                 
