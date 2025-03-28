@@ -1,18 +1,13 @@
-# Welcome to your Lovable project
+# Welcome my portfolio website
 
 ## Project info
 
-**URL**: https://lovable.dev/projects/c23f7c93-7176-4bed-b4af-20484bfdd5b9
+**URL**: https://brian-folio-rkrody61j-tristanbrians-projects.vercel.app/
 
 ## How can I edit this code?
 
 There are several ways of editing your application.
 
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/c23f7c93-7176-4bed-b4af-20484bfdd5b9) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
 
 **Use your preferred IDE**
 
@@ -24,10 +19,10 @@ Follow these steps:
 
 ```sh
 # Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+git clone < https://github.com/TristanBrian/brian-folio >
 
 # Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+cd < brian-folio >
 
 # Step 3: Install the necessary dependencies.
 npm i
@@ -52,7 +47,7 @@ npm run dev
 
 ## What technologies are used for this project?
 
-This project is built with .
+This project is built with:
 
 - Vite
 - TypeScript
@@ -62,8 +57,27 @@ This project is built with .
 
 ## How can I deploy this project?
 
-Simply open [Lovable](https://lovable.dev/projects/c23f7c93-7176-4bed-b4af-20484bfdd5b9) and click on Share -> Publish.
+To deploy your project on Vercel, follow these steps:
 
-## I want to use a custom domain - is that possible?
+1. **Install Vercel CLI**:
+   Make sure you have the Vercel CLI installed. You can install it globally using npm:
+   ```sh
+   npm install -g vercel
+   ```
 
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+2. **Login to Vercel**:
+   If you haven't logged in yet, run:
+   ```sh
+   vercel login
+   ```
+
+3. **Deploy the Project**:
+   Navigate to your project directory and run:
+   ```sh
+   vercel --prod
+   ```
+   This command will deploy your project to Vercel. Follow the prompts to complete the deployment.
+
+4. **Visit Your Deployed Project**:
+   After deployment, you will receive a URL where your project is live.
+
