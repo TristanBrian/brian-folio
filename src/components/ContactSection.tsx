@@ -182,8 +182,10 @@ const handleSubmit = async (e: React.FormEvent) => {
                     <Linkedin size={18} className="text-cyber-blue" />
                   </div>
                   <div className="ml-4">
-                    <h4 className="text-white font-medium">LinkedIn</h4>
-                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-cyber-blue transition-colors duration-300">https://www.linkedin.com/in/tristan-bryan-0986372b9/</a>
+                    <h4 className="text-white font-medium">Phone Number</h4>
+                <p className="text-gray-400">+254712046110</p>
+                <h4 className="text-white font-medium">LinkedIn</h4>
+                    <a href="https://www.linkedin.com/in/tristan-bryan-0986372b9/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-cyber-blue transition-colors duration-300">https://www.linkedin.com/in/tristan-bryan-0986372b9/</a>
                   </div>
                 </div>
                 
@@ -193,7 +195,7 @@ const handleSubmit = async (e: React.FormEvent) => {
                   </div>
                   <div className="ml-4">
                     <h4 className="text-white font-medium">GitHub</h4>
-                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-cyber-blue transition-colors duration-300">https://github.com/TristanBrian</a>
+                    <a href="https://github.com.TristanBrian" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-cyber-blue transition-colors duration-300">https://github.com/TristanBrian</a>
                   </div>
                 </div>
               </div>
