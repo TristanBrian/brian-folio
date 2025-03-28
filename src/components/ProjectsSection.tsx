@@ -24,7 +24,7 @@ const projects: Project[] = [
     image: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5',
     tags: ['React', 'Tailwind CSS', 'Portfolio', 'TypeScript'],
     links: {
-      github: 'https://github.com/TristanBrian/cyberfolio-interactive',
+      github: 'https://github.com/TristanBrian/brian-folio',
     },
     icon: <Code />,
   },
