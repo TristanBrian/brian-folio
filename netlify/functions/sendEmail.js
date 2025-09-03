@@ -2,6 +2,10 @@ require('dotenv').config();
 const nodemailer = require('nodemailer');
 
 exports.handler = async (event, context) => {
+  console.log('EMAIL_USER:', process.env.EMAIL_USER ? 'set' : 'not set');
+  console.log('EMAIL_PASS:', process.env.EMAIL_PASS ? 'set' : 'not set');
+  console.log('RECIPIENT_EMAIL:', process.env.RECIPIENT_EMAIL ? 'set' : 'not set');
+
   // Only allow POST requests
   if (event.httpMethod !== 'POST') {
     return {
