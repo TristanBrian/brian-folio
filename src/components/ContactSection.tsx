@@ -54,7 +54,7 @@ const handleSubmit = async (e: React.FormEvent) => {
         setIsSubmitting(true);
 
         try {
-            const response = await fetch('/api/sendEmail', {
+            const response = await fetch('/.netlify/functions/sendEmail', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -185,7 +185,7 @@ const handleSubmit = async (e: React.FormEvent) => {
                     <h4 className="text-white font-medium">Phone Number</h4>
                 <p className="text-gray-400">+254712046110</p>
                 <h4 className="text-white font-medium">LinkedIn</h4>
-                    <a href="https://www.linkedin.com/in/brian-kioko-0986372b9/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-cyber-blue transition-colors duration-300">https://www.linkedin.com/in/tristan-bryan-0986372b9/</a>
+                    <a href="https://www.linkedin.com/in/brian-kioko-0986372b9/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-cyber-blue transition-colors duration-300">https://www.linkedin.com/in/brian-kioko-0986372b9/</a>
                   </div>
                 </div>
                 
