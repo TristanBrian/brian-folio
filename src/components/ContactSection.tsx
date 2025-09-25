@@ -185,7 +185,7 @@ const handleSubmit = async (e: React.FormEvent) => {
                     <h4 className="text-white font-medium">Phone Number</h4>
                 <p className="text-gray-400">+254712046110</p>
                 <h4 className="text-white font-medium">LinkedIn</h4>
-                    <a href="https:www.linkedin.com/in/brian-kioko-a40a23338/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-cyber-blue transition-colors duration-300">https://www.linkedin.com/in/brian-kioko-0986372b9/</a>
+                    <a href="www.linkedin.com/in/brian-kioko-a40a23338" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-cyber-blue transition-colors duration-300">https://www.linkedin.com/in/brian-kioko-0986372b9/</a>
                   </div>
                 </div>
                 
