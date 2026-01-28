@@ -120,6 +120,9 @@ const AboutSection = () => {
                     <p className="text-gray-400 mb-2">Smartech Ventures• Freelance </p>
                     <p className="text-sm text-gray-300">
                       Developing secure applications and implementing cybersecurity protocols for enterprise systems.
+                      Designed and enforced access control mechanisms including JWT/OAuth authentication systems, ensuring secure user provisioning and role-based data access for client applications
+                      Designed and developed ERP-style web applications using Laravel,Vue.js, and Node.js.
+                      Built and deployed RESTful APIs, authentication systems, and analytics dashboards.
                     </p>
                   </div>
                 </div>
