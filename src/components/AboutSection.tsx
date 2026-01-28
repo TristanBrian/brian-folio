@@ -95,44 +95,47 @@ const AboutSection = () => {
             </h3>
 
             <div className="space-y-6">
+              {/* Education Section */}
               <div className="cyberpanel p-6 animate-fade-in">
                 <div className="flex items-start">
                   <div className="w-12 h-12 rounded-full bg-cyber-blue/10 flex-shrink-0 flex items-center justify-center">
                     <GraduationCap size={20} className="text-cyber-blue" />
                   </div>
-                 <div className="ml-4">
-            <h4 className="text-lg font-medium text-white">
-              Bachelor of Science in Business and Information Technology  </h4>
-           <p className="text-gray-400 mb-2"> Mount Kenya University • 2022 – 2025 </p>
-    <ul className="text-sm text-gray-300 list-disc list-inside space-y-1">
-    <li>Specialized in cybersecurity and software development</li>
-    <li>Completed multiple research projects focused on network security</li>
-    <li>Served as Tech Lead in class projects integrating ICT solutions for enterprise workflows</li>
-    <li>
-      Built strong expertise in aligning business strategy with IT architecture,
-      forming the foundation of a developer–analyst mindset
-    </li>
-  </ul>
-</div>
+                  <div className="ml-4">
+                    <h4 className="text-lg font-medium text-white">
+                      Bachelor of Science in Business and Information Technology
+                    </h4>
+                    <p className="text-gray-400 mb-2">Mount Kenya University • 2022 – 2025</p>
+                    <ul className="text-sm text-gray-300 list-disc list-inside space-y-1">
+                      <li>Specialized in cybersecurity and software development</li>
+                      <li>Completed multiple research projects focused on network security</li>
+                      <li>Served as Tech Lead in class projects integrating ICT solutions for enterprise workflows</li>
+                      <li>Built strong expertise in aligning business strategy with IT architecture</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
 
+              {/* Freelance Experience */}
               <div className="cyberpanel p-6 animate-fade-in" style={{ animationDelay: '0.2s' }}>
                 <div className="flex items-start">
                   <div className="w-12 h-12 rounded-full bg-cyber-blue/10 flex-shrink-0 flex items-center justify-center">
                     <Code size={20} className="text-cyber-blue" />
                   </div>
                   <div className="ml-4">
-                    <h4 className="text-lg font-medium text-white">FreeLance Software Developer</h4>
-                    <p className="text-gray-400 mb-2">Smartech Ventures• Freelance </p>
-                    <p className="text-sm text-gray-300">
-                      Developing secure applications and implementing cybersecurity protocols for enterprise systems.
-                      Designed and enforced access control mechanisms including JWT/OAuth authentication systems, ensuring secure user provisioning and role-based data access for client applications
-                      Designed and developed ERP-style web applications using Python,Vue.js, and Node.js.
-                      Built and deployed RESTful APIs, authentication systems, and analytics dashboards.
-                    </p>
+                    <h4 className="text-lg font-medium text-white">Freelance Software Developer</h4>
+                    <p className="text-gray-400 mb-2">Smartech Ventures • Freelance</p>
+                    <ul className="text-sm text-gray-300 list-disc list-inside space-y-1">
+                      <li>Developed secure applications and implemented cybersecurity protocols for enterprise systems</li>
+                      <li>Designed and enforced access control mechanisms including JWT/OAuth authentication systems</li>
+                      <li>Built and deployed RESTful APIs, authentication systems, and analytics dashboards</li>
+                      <li>Ensured secure user provisioning and role-based data access for client applications</li>
+                    </ul>
                   </div>
                 </div>
               </div>
 
+              {/* Internship Experience */}
               <div className="cyberpanel p-6 animate-fade-in" style={{ animationDelay: '0.4s' }}>
                 <div className="flex items-start">
                   <div className="w-12 h-12 rounded-full bg-cyber-blue/10 flex-shrink-0 flex items-center justify-center">
@@ -141,11 +144,12 @@ const AboutSection = () => {
                   <div className="ml-4">
                     <h4 className="text-lg font-medium text-white">Software Developer Intern</h4>
                     <p className="text-gray-400 mb-2">Sensys Limited • July 2025 - Nov 2025</p>
-                    <p className="text-sm text-gray-300">
-                      Internship focused on software development, gaining hands-on experience in Banking Technology and secure coding practices.
-                      Contributed to regulatory compliance and data integrity within a core banking environment (Temenos T24), developing scripts that
-                      enhanced security controls and ensured accurate transaction processing in line with financial standards
-                    </p>
+                    <ul className="text-sm text-gray-300 list-disc list-inside space-y-1">
+                      <li>Gained hands-on experience in Banking Technology and secure coding practices</li>
+                      <li>Contributed to regulatory compliance and data integrity within a core banking environment (Temenos T24)</li>
+                      <li>Developed scripts that enhanced security controls and ensured accurate transaction processing</li>
+                      <li>Worked with financial standards and secure development lifecycle</li>
+                    </ul>
                   </div>
                 </div>
               </div>
