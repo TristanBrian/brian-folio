@@ -105,6 +105,8 @@ const AboutSection = () => {
                     <p className="text-gray-400 mb-2">Mount Kenya University • 2022-2025</p>
                     <p className="text-sm text-gray-300">
                       Specialized in cybersecurity and software development. Completed multiple research projects on network security.
+                      Served as Tech Lead in class projects integrating ICT solutions for enterprise workflows.
+                      Gained expertise in aligning business strategy with IT architecture the foundation of your current developer–analyst mindset.
                     </p>
                   </div>
                 </div>
@@ -121,7 +123,7 @@ const AboutSection = () => {
                     <p className="text-sm text-gray-300">
                       Developing secure applications and implementing cybersecurity protocols for enterprise systems.
                       Designed and enforced access control mechanisms including JWT/OAuth authentication systems, ensuring secure user provisioning and role-based data access for client applications
-                      Designed and developed ERP-style web applications using Laravel,Vue.js, and Node.js.
+                      Designed and developed ERP-style web applications using Python,Vue.js, and Node.js.
                       Built and deployed RESTful APIs, authentication systems, and analytics dashboards.
                     </p>
                   </div>
