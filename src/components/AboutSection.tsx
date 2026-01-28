@@ -132,9 +132,11 @@ const AboutSection = () => {
                   </div>
                   <div className="ml-4">
                     <h4 className="text-lg font-medium text-white">Software Developer Intern</h4>
-                    <p className="text-gray-400 mb-2">Sensys Limited • 2025 - Present</p>
+                    <p className="text-gray-400 mb-2">Sensys Limited • July 2025 - Nov 2025</p>
                     <p className="text-sm text-gray-300">
                       Internship focused on software development, gaining hands-on experience in Banking Technology and secure coding practices.
+                      Contributed to regulatory compliance and data integrity within a core banking environment (Temenos T24), developing scripts that
+                      enhanced security controls and ensured accurate transaction processing in line with financial standards
                     </p>
                   </div>
                 </div>
