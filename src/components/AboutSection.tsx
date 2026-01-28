@@ -100,17 +100,20 @@ const AboutSection = () => {
                   <div className="w-12 h-12 rounded-full bg-cyber-blue/10 flex-shrink-0 flex items-center justify-center">
                     <GraduationCap size={20} className="text-cyber-blue" />
                   </div>
-                  <div className="ml-4">
-                    <h4 className="text-lg font-medium text-white">Bachelor of Science Business and Information Technology</h4>
-                    <p className="text-gray-400 mb-2">Mount Kenya University • 2022-2025</p>
-                    <p className="text-sm text-gray-300">
-                      Specialized in cybersecurity and software development. Completed multiple research projects on network security.
-                      Served as Tech Lead in class projects integrating ICT solutions for enterprise workflows.
-                      Gained expertise in aligning business strategy with IT architecture the foundation of your current developer–analyst mindset.
-                    </p>
-                  </div>
-                </div>
-              </div>
+                 <div className="ml-4">
+            <h4 className="text-lg font-medium text-white">
+              Bachelor of Science in Business and Information Technology  </h4>
+           <p className="text-gray-400 mb-2"> Mount Kenya University • 2022 – 2025 </p>
+    <ul className="text-sm text-gray-300 list-disc list-inside space-y-1">
+    <li>Specialized in cybersecurity and software development</li>
+    <li>Completed multiple research projects focused on network security</li>
+    <li>Served as Tech Lead in class projects integrating ICT solutions for enterprise workflows</li>
+    <li>
+      Built strong expertise in aligning business strategy with IT architecture,
+      forming the foundation of a developer–analyst mindset
+    </li>
+  </ul>
+</div>
 
               <div className="cyberpanel p-6 animate-fade-in" style={{ animationDelay: '0.2s' }}>
                 <div className="flex items-start">
