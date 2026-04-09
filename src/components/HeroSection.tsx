@@ -137,7 +137,7 @@ const HeroSection = () => {
             <p>$ <span className="text-cyber-blue">whoami</span></p>
             <p className="ml-2">Brian Kioko - Cybersecurity Specialist & AI Software Developer</p>
             <p>$ <span className="text-cyber-blue">skills --list</span></p>
-            <p className="ml-2">['React', 'Python', 'Machine Learning', 'Penetration Testing','OpenAI API intergrations', 'Prompt Engineering', 'DevOps']</p>
+            <p className="ml-2">['React', 'Python', 'Machine Learning', 'Penetration Testing','OpenAI API integrations', 'Prompt Engineering', 'DevOps']</p>
             <p>$ <span className="text-cyber-blue">./start_tour.sh</span></p>
             <p className="ml-2 text-cyber-blue animate-pulse">Initiating portfolio tour...</p>
           </div>
