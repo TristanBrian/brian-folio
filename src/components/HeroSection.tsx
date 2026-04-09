@@ -91,16 +91,16 @@ const HeroSection = () => {
       <div className="container mx-auto px-4 z-10">
         <div className="max-w-3xl">
           <div className="mb-6 inline-block py-1 px-3 bg-cyber-blue/10 border border-cyber-blue/30 rounded-md">
-            <TextTypingEffect text="Cybersecurity Specialist & Software Engineer" />
+            <TextTypingEffect text="Cybersecurity Specialist & AI Software Engineer" />
           </div>
           
           <h1 className="text-4xl md:text-6xl font-extrabold mb-6 text-white">
             Brian <span className="text-cyber-blue cyberglow">Kioko</span>
           </h1>
           
-          <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-            Dedicated security professional and full-stack developer based in Nairobi, Kenya. Specializing in developing secure applications and implementing robust cybersecurity solutions to protect critical digital assets.
-          </p>
+        <p className="text-xl text-gray-300 mb-8 leading-relaxed">
+          AI-focused full-stack developer and cybersecurity enthusiast based in Nairobi, Kenya. Passionate about designing secure and scalable AI-powered applications that automate business processes, deliver actionable insights, and protect critical digital assets.
+        </p>
           
           <div className="flex flex-wrap gap-4">
             <button
