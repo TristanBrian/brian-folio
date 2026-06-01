@@ -1,4 +1,4 @@
-# 👨‍💻 Brian Lessus – AI & Full-Stack Developer Portfolio
+# 👨‍💻 Brian Kioko – AI & Full-Stack Developer Portfolio
 
 Welcome to my professional portfolio! I am a Business Information Technology graduate based in Nairobi, Kenya, specializing in Artificial Intelligence, full-stack development, and secure, scalable digital solutions. This portfolio showcases my projects, technical skills, and experience in building impactful, data-driven applications.
 
