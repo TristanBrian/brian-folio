@@ -1,67 +1,31 @@
-require('dotenv').config();
-const nodemailer = require('nodemailer');
+import { Resend } from 'resend';
 
-exports.handler = async (event, context) => {
-  console.log('EMAIL_USER:', process.env.EMAIL_USER ? 'set' : 'not set');
-  console.log('EMAIL_PASS:', process.env.EMAIL_PASS ? 'set' : 'not set');
-  console.log('RECIPIENT_EMAIL:', process.env.RECIPIENT_EMAIL ? 'set' : 'not set');
-
-  // Only allow POST requests
+export const handler = async (event) => {
   if (event.httpMethod !== 'POST') {
-    return {
-      statusCode: 405,
-      body: JSON.stringify({ error: 'Method not allowed' }),
-    };
+    return { statusCode: 405, body: 'Method Not Allowed' };
   }
 
   try {
-    // Parse the request body
-    const { name, email, message } = JSON.parse(event.body);
-
-    // Validate required fields
+    const { name, email, message } = JSON.parse(event.body || '{}');
     if (!name || !email || !message) {
-      return {
-        statusCode: 400,
-        body: JSON.stringify({ error: 'Missing required fields' }),
-      };
+      return { statusCode: 400, body: JSON.stringify({ error: 'Missing fields' }) };
     }
 
-    // Create transporter with environment variables
-    const transporter = nodemailer.createTransport({
-      service: 'gmail',
-      auth: {
-        user: process.env.EMAIL_USER,
-        pass: process.env.EMAIL_PASS,
-      },
+    const resend = new Resend(process.env.RESEND_API_KEY);
+    const { error } = await resend.emails.send({
+      from: process.env.FROM_EMAIL,
+      to: [process.env.TO_EMAIL],
+      replyTo: email,
+      subject: `New message from ${name}`,
+      text: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,
+      html: `<h3>New message</h3><p><strong>Name:</strong> ${name}</p><p><strong>Email:</strong> ${email}</p><p><strong>Message:</strong></p><p>${message.replace(/\n/g, '<br>')}</p>`,
     });
 
-    // Email options
-    const mailOptions = {
-      from: process.env.EMAIL_USER,
-      to: process.env.RECIPIENT_EMAIL || 'lessusbrian7@gmail.com',
-      subject: `New message from ${name}`,
-      text: `From: ${name} (${email})\n\n${message}`,
-      html: `
-        <h3>New Contact Form Message</h3>
-        <p><strong>From:</strong> ${name}</p>
-        <p><strong>Email:</strong> ${email}</p>
-        <p><strong>Message:</strong></p>
-        <p>${message.replace(/\n/g, '<br>')}</p>
-      `,
-    };
+    if (error) throw new Error(error.message);
 
-    // Send email
-    await transporter.sendMail(mailOptions);
-
-    return {
-      statusCode: 200,
-      body: JSON.stringify({ message: 'Email sent successfully' }),
-    };
+    return { statusCode: 200, body: JSON.stringify({ success: true }) };
   } catch (error) {
-    console.error('Error sending email:', error);
-    return {
-      statusCode: 500,
-      body: JSON.stringify({ error: 'Failed to send email' }),
-    };
+    console.error(error);
+    return { statusCode: 500, body: JSON.stringify({ error: error.message }) };
   }
 };
